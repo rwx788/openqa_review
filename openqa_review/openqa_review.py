@@ -616,7 +616,11 @@ class Issue(object):
             try:
                 if self.bugid == 0:
                     log.debug("#0 ticket id reference found")
+<<<<<<< HEAD
                     self.msg = 'NOTE: boo#0/bsc#0/poo#0 label used, please review. Consider creating progress ticket for the investigation'
+=======
+                    self.msg = 'NOTE: boo#0/bsc#0/poo#0 label used, please review. Consider creating progress ticket for investigation'
+>>>>>>> Process poo#0/boo#0/bsc#0 ticket labels
                     return
                 elif bugref.startswith('poo#'):
                     log.debug("Test issue discovered, looking on progress")
